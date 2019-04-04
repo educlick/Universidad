@@ -10,8 +10,9 @@ namespace Dominio
     public class UContext : DbContext
     {
         public UContext ()
+            :base("DefaultConnection")
         {
-           // :base("")
+
         }
     }
 }

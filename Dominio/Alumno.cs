@@ -29,7 +29,9 @@ namespace Dominio
         [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}")]
         public DateTime FechaNacimiento { get; set; }
 
-        public int Sexo { get; set; }
+        [Display(Name = "Sexo")]
+        public int IdSexo { get; set; }
+        public virtual Sexo Sexo { get; set; }
 
         [Display(Name = "Telefono")]
         [DataType(DataType.PhoneNumber)]
@@ -47,10 +49,13 @@ namespace Dominio
         [StringLength(100, ErrorMessage = "El número de caracteres de {0} debe ser al menos {2}", MinimumLength = 2)]
         public string Direccion { get; set; }
 
+        [Display(Name = "Barrio")]
         public int IdBarrio { get; set; }
+        public virtual Barrio Barrio { get; set; }
 
+        [Display(Name = "Ciudad")]
         public int IdCiudad { get; set; }
-
+        public virtual Ciudad Ciudad { get; set; }
 
     }
 }
