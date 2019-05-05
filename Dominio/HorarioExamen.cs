@@ -19,5 +19,7 @@ namespace Dominio
         [DataType(DataType.DateTime)]
         [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}")]
         public DateTime Fecha { get; set; }
+
+        public virtual ICollection<Examenes> Examenes { get; set; }
     }
 }
