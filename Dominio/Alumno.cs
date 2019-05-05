@@ -25,7 +25,7 @@ namespace Dominio
         public string Apellido { get; set; }
 
         [Display(Name ="Fecha de Nacimiento")]
-        [DataType(DataType.DateTime)]
+        [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}")]
         public DateTime FechaNacimiento { get; set; }
 
@@ -39,7 +39,7 @@ namespace Dominio
 
         [Display(Name = "Email")]
         [DataType(DataType.EmailAddress)]
-        [StringLength(100, ErrorMessage = "El número de caracteres de {0} debe ser al menos {6}", MinimumLength = 6)]
+        [StringLength(100, ErrorMessage = "El número de caracteres de {0} debe ser al menos {2}", MinimumLength = 6)]
         public string Mail { get; set; }
 
         [Display(Name = "Celular")]
