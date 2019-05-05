@@ -12,6 +12,8 @@ namespace Dominio
         [Key]
         public int IdCalificaciones { get; set; }
         public int IdExamen { get; set; }
+        public virtual Examenes Examenes { get; set; }
         public int Calificacion { get; set; }
+        
     }
 }
