@@ -14,5 +14,7 @@ namespace Dominio
         {
 
         }
+
+        public DbSet<Dominio.Turnos> Turnos { get; set; }
     }
 }
