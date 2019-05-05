@@ -13,6 +13,7 @@ namespace Dominio
         public int IdProfesor { get; set; }
         public int IdMateria { get; set; }
         public int IdTurno { get; set; }
+        public virtual Turnos Turnos { get; set; }
         public int Cupo { get; set; }
     }
 }

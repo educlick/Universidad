@@ -15,5 +15,7 @@ namespace Dominio
         [Required]
         [Display(Name = "Descripción")]
         public string Descripcion { get; set; }
+
+        public virtual ICollection<Horarios> Horarios { get; set; }
     }
 }
