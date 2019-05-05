@@ -11,7 +11,9 @@ namespace Dominio
     {
         [Key]
         public int IdCarrera { get; set; }
-
+        [Required]
         public string Descripcion { get; set; }
+
+        public virtual ICollection<Matricula> Matricula { get; set; }
     }
 }
