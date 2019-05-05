@@ -12,9 +12,13 @@ namespace Dominio
         [Key]
         public int IdHorarioExamen { get; set; }
         public int IdAula { get; set; }
+        public virtual Aulas Aulas { get; set; }
         public int IdProfesor { get; set; }
+        public virtual Profesores Profesores { get; set; }
         public int IdMateria { get; set; }
+        public virtual Materias { get; set; }
         public int IdTurno { get; set; }
+        public virtual Materias Materias { get; set; }
         [Display(Name = "Fecha de Examen")]
         [DataType(DataType.DateTime)]
         [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}")]
