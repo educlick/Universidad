@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Dominio
 {
-    public class UContext : DbContext
+    public class UContext:DbContext
     {
         public UContext ()
             :base("DefaultConnection")
