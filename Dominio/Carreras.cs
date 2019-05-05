@@ -14,6 +14,6 @@ namespace Dominio
         [Required]
         public string Descripcion { get; set; }
 
-        public virtual ICollection<Matricula> Matricula { get; set; }
+        /*public virtual ICollection<Matricula> Matricula { get; set; }*/
     }
 }
