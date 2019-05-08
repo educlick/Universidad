@@ -59,7 +59,8 @@
     <Compile Include="Calificaciones.cs" />
     <Compile Include="Carreras.cs" />
     <Compile Include="Ciudad.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="Matricula.cs" />
+    <Compile Include="Materias.cs" />
     <Compile Include="Correlatividades.cs" />
     <Compile Include="DetMalla.cs" />
     <Compile Include="Examenes.cs" />

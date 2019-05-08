@@ -44,6 +44,6 @@ namespace Dominio
         public char Mail { get; set; }
 
         public virtual ICollection<Horarios> Horarios  { get; set; }
-        public virtual ICollection<HorarioExamen> HorarioExamenes { get; set; }
+        public virtual ICollection<HorarioExamen> HorarioExamen { get; set; }
     }
 }
