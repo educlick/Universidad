@@ -68,6 +68,7 @@
     <Compile Include="Inscripciones.cs" />
     <Compile Include="Malla.cs" />
     <Compile Include="MallaAlumnos.cs" />
+    <Compile Include="Profesores.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sexo.cs" />
     <Compile Include="TipoAula.cs" />
