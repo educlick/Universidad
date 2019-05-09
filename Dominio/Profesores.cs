@@ -10,10 +10,9 @@ namespace Dominio
     class Profesores
     {
         [Key]
-        public int IdInscripcion { get; set; }
-        [Required]
         [Display(Name = "Id de Profesores")]
         public int IdProfesor { get; set; }
+        [Required]
         [Display(Name = "Cédula")]
         public char Cedula { get; set; }
         [Display(Name = "Nombre")]
