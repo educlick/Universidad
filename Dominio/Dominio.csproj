@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Alumno.cs" />
+    <Compile Include="Aulas.cs" />
     <Compile Include="Barrio.cs" />
     <Compile Include="Calificaciones.cs" />
     <Compile Include="Carreras.cs" />
