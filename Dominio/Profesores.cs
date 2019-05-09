@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Dominio
 {
-    class Profesores
+    public class Profesores
     {
         [Key]
         [Display(Name = "Id de Profesores")]

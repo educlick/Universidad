@@ -12,8 +12,9 @@ namespace Dominio
         [Key]
         public int IdCarrera { get; set; }
         [Required]
+        [Display(Name = "Descripción")]
         public string Descripcion { get; set; }
 
-        /*public virtual ICollection<Matricula> Matricula { get; set; }*/
+        public virtual ICollection<Matricula> Matricula { get; set; }
     }
 }
