@@ -17,8 +17,12 @@ namespace Dominio
         public int IdDetmalla { get; set; }
         public virtual DetMalla DetMalla { get; set; }
 
+        [Display(Name = "Orden")]
+        public int Orden_1 { get; set; }
+
         [Display(Name = "Seleccione la materia")]
         public int IdMateria { get; set; }
-        public int Orden_1 { get; set; }
+        public virtual Materias Materias { get; set; }
+
     }
 }
