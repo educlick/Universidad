@@ -1,0 +1,42 @@
+﻿@model Dominio.TipoAula
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TipoAula</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Tipo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tipo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Capacidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Capacidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Wifi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Wifi)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdTpaula }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

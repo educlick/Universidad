@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Dominio.Correlatividades>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DetMalla.IdDetmalla)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Materias.IdMateria)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Orden_1)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DetMalla.IdDetmalla)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Materias.IdMateria)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Orden_1)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdCorredet }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdCorredet }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdCorredet })
+        </td>
+    </tr>
+}
+
+</table>
