@@ -13,6 +13,7 @@ namespace Dominio
         public int IdBarrio { get; set; }
 
         [Required]
+        [Display(Name = "Descripción Barrio")]
         [StringLength(30, ErrorMessage = "El número de caracteres de {0} debe ser al menos {2}", MinimumLength = 2)]
         public string Descripcion { get; set; }
 
