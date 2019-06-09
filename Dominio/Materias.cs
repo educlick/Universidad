@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Dominio
 {
-    class Materias
+    public class Materias
     {
         [Key]
         [Display(Name = "Id de Materia")]
