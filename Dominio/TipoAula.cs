@@ -22,6 +22,6 @@ namespace Dominio
         [StringLength(1, ErrorMessage = "El número de caracteres de {0} debe ser al menos {1}", MinimumLength = 1)]
         public string Wifi { get; set; }
 
-        //public virtual ICollection <Aulas> Aulas { get; set; }
+        public virtual ICollection <Aulas> Aulas { get; set; }
     }
 }

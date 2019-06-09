@@ -17,5 +17,6 @@ namespace Dominio
         public string Descripcion { get; set; }
 
         public virtual ICollection<Horarios> Horarios { get; set; }
+        public virtual ICollection<HorarioExamen> HorarioExamen  { get; set; }
     }
 }

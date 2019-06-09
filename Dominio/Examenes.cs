@@ -23,5 +23,6 @@ namespace Dominio
         public DateTime Fecha { get; set; }
 
         public virtual ICollection<Calificaciones> Calificaciones { get; set; }
+        
     }
 }
