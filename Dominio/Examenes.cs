@@ -10,8 +10,11 @@ namespace Dominio
     public class Examenes
     {
         [Key]
+        [Display(Name = "Id de Examen")]
         public int IdExamen { get; set; }
+        [Display(Name = "Id de Inscripción")]
         public int IdInscripcion { get; set; }
+        [Display(Name = "Id de Horario de Exámen")]
         public int HorExamen { get; set; }
         public virtual HorarioExamen HorarioExamen { get; set; }
         [Display(Name = "Fecha de Examen")]

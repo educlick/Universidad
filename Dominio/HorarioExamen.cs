@@ -11,12 +11,16 @@ namespace Dominio
     {
         [Key]
         public int IdHorarioExamen { get; set; }
+        [Display(Name = "Id de Aula")]
         public int IdAula { get; set; }
         public virtual Aulas Aulas { get; set; }
+        [Display(Name = "Id de Profesor")]
         public int IdProfesor { get; set; }
         public virtual Profesores Profesores { get; set; }
+        [Display(Name = "Id de Materia")]
         public int IdMateria { get; set; }
         public virtual Materias Materias { get; set; }
+        [Display(Name = "Id de Turno")]
         public int IdTurno { get; set; }
         public virtual Turnos Turnos { get; set; }
         [Display(Name = "Fecha de Examen")]
