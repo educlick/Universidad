@@ -57,8 +57,13 @@ namespace Dominio
         public int IdCiudad { get; set; }
         public virtual Ciudad Ciudad { get; set; }
 
+        [Display(Name = "Matricula")]
         public virtual ICollection<Matricula> Matricula { get; set; }
+
+        [Display(Name = "Malla")]
         public virtual ICollection<MallaAlumnos> MallaAlumnos { get; set; }
+
+        [Display(Name = "Ciudad")]
         public virtual ICollection<Inscripciones> Inscripciones { get; set; }
     }
 }
