@@ -15,10 +15,11 @@ namespace Dominio
         [Required]
         [Display(Name = "Id de Alumno")]
         public int IdAlumno { get; set; }
+        public virtual Alumno Alumno { get; set; }
         [Required]
         [Display(Name = "Id de Matricula")]
         public int IdMatricula { get; set; }
-        public virtual Alumno Alumno { get; set; }
+        public virtual Matricula Matricula { get; set; }
         [Required]
         [Display(Name = "Id de Malla")]
         public int IdMallaAlum { get; set; }
