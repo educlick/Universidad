@@ -1,20 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Dominio
 {
+    [Table("Aulas")]
     public class Aulas
     {
         [Key]
         [Display(Name = "Id de Aula")]
-        public int IdAula { get; set; }
+        public int AulaId { get; set; }
         [Required]
         [Display(Name = "Id de Tipo de Aula")]
-        public int IdTipoAula { get; set; }
+        public int TipoAulaId { get; set; }
         public virtual TipoAula TipoAula { get; set; }
         [Required]
         [Display(Name = "Descripción")]
@@ -26,8 +28,9 @@ namespace Dominio
         [Display(Name = "Georeferencia")]
         public char georeferencia { get; set; }
 
-        public virtual ICollection<HorarioExamen> HorarioExamen { get; set; }
         public virtual ICollection<Horarios> Horarios { get; set; }
+        public virtual ICollection<HorarioExamen> HorarioExamen { get; set; }
+        
 
     }
 }

@@ -1,16 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Dominio
 {
+    [Table("Barrio")]
     public class Barrio
     {
         [Key]
-        public int IdBarrio { get; set; }
+        public int BarrioId { get; set; }
 
         [Required]
         [Display(Name = "Descripción Barrio")]

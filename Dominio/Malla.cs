@@ -1,17 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Dominio
 {
+    [Table("Malla")]
     public class Malla
     {
         [Key]
         [Display(Name = "Id de Malla")]
-        public DateTime Fecha { get; set; }
         public int IdMalla { get; set; }
 
         [Required]

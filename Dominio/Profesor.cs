@@ -1,17 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Dominio
 {
+    [Table("Profesores")]
     public class Profesores
     {
         [Key]
         [Display(Name = "Id de Profesores")]
-        public int IdProfesor { get; set; }
+        public int ProfesorId { get; set; }
         [Required]
         [Display(Name = "Cédula")]
         public char Cedula { get; set; }
@@ -25,13 +27,13 @@ namespace Dominio
         public DateTime FechaNac { get; set; }
         [Required]
         [Display(Name = "Sexo")]
-        public int IdSexo { get; set; }
+        public int SexoId { get; set; }
         public virtual Sexo Sexo { get; set; }
         [Display(Name = "Barrio")]
-        public int IdBarrio { get; set; }
+        public int BarrioId { get; set; }
         public virtual Barrio Barrio { get; set; }
         [Display(Name = "Ciudad")]
-        public int IdCiudad { get; set; }
+        public int CiudadId { get; set; }
         public virtual Ciudad Ciudad { get; set; }
         [Display(Name = "Teléfono")]
         public char Telefono { get; set; }

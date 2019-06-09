@@ -1,26 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Dominio
 {
+    [Table("MallaAlumnos")]
     public class MallaAlumnos
     {
         [Key]
         [Display(Name = "Id de Mala Alumno")]
-        public int IdMallaalu { get; set; }
+        public int MallaaluId { get; set; }
 
         [Required]
         [Display(Name = "Id de Malla")]
-        public int IdMalla { get; set; }
+        public int MallaId { get; set; }
         public virtual Malla Malla { get; set; }
 
         [Required]
         [Display(Name = "Id de Alumno")]
-        public int IdAlumno { get; set; }
+        public int AlumnoId { get; set; }
         public virtual Alumno Alumno { get; set; }
 
         [Display(Name = "Fecha Inicio de Validez")]

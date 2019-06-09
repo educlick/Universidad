@@ -1,16 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Dominio
 {
+    [Table("Ciudad")]
     public class Ciudad
     {
         [Key]
-        public int IdCiudad { get; set; }
+        public int CiudadId { get; set; }
 
         [Required]
         [Display(Name = "Descripción")]

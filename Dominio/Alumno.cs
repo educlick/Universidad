@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Dominio
 {
+    [Table("Alumno")]
     public class Alumno
     {
         [Key]
@@ -57,13 +59,8 @@ namespace Dominio
         public int IdCiudad { get; set; }
         public virtual Ciudad Ciudad { get; set; }
 
-        [Display(Name = "Matricula")]
         public virtual ICollection<Matricula> Matricula { get; set; }
-
-        [Display(Name = "Malla")]
         public virtual ICollection<MallaAlumnos> MallaAlumnos { get; set; }
-
-        [Display(Name = "Ciudad")]
-        public virtual ICollection<Inscripciones> Inscripciones { get; set; }
+        public virtual ICollection<Inscripciones> Inscripcion { get; set; }
     }
 }

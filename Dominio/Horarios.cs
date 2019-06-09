@@ -1,36 +1,38 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Dominio
 {
+    [Table("Horarios")]
     public class Horarios
     {
         [Key]
         [Display(Name = "Id de Horario")]
-        public int IdHorario { get; set; }
+        public int HorarioId { get; set; }
         [Required]
         [Display(Name = "Id de Aula")]
-        public int IdAula { get; set; }
+        public int AulaId { get; set; }
         public virtual Aulas Aulas { get; set; }
         [Required]
         [Display(Name = "Id de Profesor")]
-        public int IdProfesor { get; set; }
-        public virtual Profesores Profesores { get; set; }
+        public int ProfesorId { get; set; }
+        public virtual Profesores Profesor { get; set; }
         [Required]
         [Display(Name = "Id de Materia")]
-        public int IdMateria { get; set; }
+        public int MateriaId { get; set; }
         public virtual Materias Materias { get; set; }
         [Required]
         [Display(Name = "Id de Turno")]
-        public int IdTurno { get; set; }
+        public int TurnoId { get; set; }
         public virtual Turnos Turnos { get; set; }
         [Display(Name = "Cupo")]
         public int Cupo { get; set; }
 
-        public virtual ICollection<Inscripciones> Inscripciones { get; set; }
+        public virtual ICollection<Inscripciones> Inscripcions { get; set; }
     }
 }
