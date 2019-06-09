@@ -1,0 +1,58 @@
+﻿@model Dominio.Inscripciones
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Inscripciones</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Horarioes.HorarioId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Horarioes.HorarioId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MallaAlumnoes.MallaaluId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MallaAlumnoes.MallaaluId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Matriculaes.MatriculaId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Matriculaes.MatriculaId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlumnoId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlumnoId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdInscripcion }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

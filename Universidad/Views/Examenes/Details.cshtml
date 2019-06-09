@@ -1,0 +1,42 @@
+﻿@model Dominio.Examenes
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Examenes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HorarioExamenes.HorarioExamenId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HorarioExamenes.HorarioExamenId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InscripcionId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InscripcionId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ExamenId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

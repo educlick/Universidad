@@ -1,0 +1,42 @@
+﻿@model Dominio.Malla
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Malla</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomMalla)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomMalla)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InicioValidez)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InicioValidez)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FinValidez)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FinValidez)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdMalla }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

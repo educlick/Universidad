@@ -1,0 +1,42 @@
+﻿@model Dominio.Matricula
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Matricula</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Carreras.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carreras.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlumnoId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlumnoId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MatriculaId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Dominio.Inscripciones>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Horarioes.HorarioId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MallaAlumnoes.MallaaluId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Matriculaes.MatriculaId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AlumnoId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Horarioes.HorarioId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MallaAlumnoes.MallaaluId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Matriculaes.MatriculaId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlumnoId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fecha)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdInscripcion }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdInscripcion }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdInscripcion })
+        </td>
+    </tr>
+}
+
+</table>
