@@ -21,7 +21,7 @@ namespace Dominio
         /*public System.Data.Entity.DbSet<Dominio.Materias> Materias { get; set; }*/
         public System.Data.Entity.DbSet<Dominio.Barrio> Barrios { get; set; }
 
-        public System.Data.Entity.DbSet<Dominio.Alumno> Alumnoes { get; set; }
+        public System.Data.Entity.DbSet<Dominio.Alumno> Alumno { get; set; }
 
         public System.Data.Entity.DbSet<Dominio.Aulas> Aulas { get; set; }
 
